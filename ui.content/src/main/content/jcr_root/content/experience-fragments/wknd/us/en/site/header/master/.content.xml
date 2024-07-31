@@ -2,6 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2024-07-31T10:15:12.644Z"
+        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/wknd/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -10,25 +12,65 @@
         jcr:title="Header"
         sling:resourceType="wknd/components/xfpage">
         <root
+            jcr:lastModified="{Date}2024-07-31T10:05:37.691Z"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wknd/components/container"
-            layout="simple">
+            layout="responsiveGrid">
+            <image
+                jcr:created="{Date}2024-07-31T10:06:34.752Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-07-31T10:11:37.722Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd/components/image"
+                alt="Logo del sito weekend"
+                altValueFromDAM="false"
+                disableLazyLoading="false"
+                displayPopupTitle="false"
+                fileReference="/content/dam/wknd/en/site/wknd-logo-dk.svg"
+                imageFromPageImage="false"
+                isDecorative="false"
+                linkTarget="_self"
+                linkURL="/content/wknd/us/en"
+                titleValueFromDAM="false">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="2"/>
+                </cq:responsive>
+            </image>
             <navigation
+                jcr:lastModified="{Date}2024-07-31T10:13:13.221Z"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wknd/components/navigation"
                 collectAllPages="false"
+                disableShadowing="false"
                 navigationRoot="/content/wknd/us/en"
                 skipNavigationRoot="false"
-                structureDepth="1"/>
-            <languagenavigation
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wknd/components/languagenavigation"
-                navigationRoot="/content/wknd/us"
-                structureDepth="2"/>
+                structureDepth="1"
+                structureStart="1">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="8"/>
+                </cq:responsive>
+            </navigation>
             <search
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wknd/components/search"
-                searchRoot="/content/wknd/us"/>
+                searchRoot="/content/wknd/us">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="2"/>
+                </cq:responsive>
+            </search>
+            <logo/>
         </root>
     </jcr:content>
 </jcr:root>
